@@ -3,7 +3,7 @@
 var shortid = require('shortid');
 
 exports.getData = function(request, response) {
-    var count = request.params.count,
+    var count = request.params.count || 500,
         responseObj = {
             data: []
         },
